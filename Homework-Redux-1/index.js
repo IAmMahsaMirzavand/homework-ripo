@@ -20,7 +20,7 @@
 // An action is a plain JavaScript object that represents an intention to change the state of the application. Each action must have a `type` property that indicates the type of action being performed. Actions may also contain additional data, known as the payload, which provides the information necessary for the state change.
 
 // Example:
-
+const ADD_TODO = 'add/todo'
 
 // Define an action
 const addTodoAction = {
