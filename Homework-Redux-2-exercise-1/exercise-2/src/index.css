@@ -66,3 +66,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+/* .rotate-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out; 
+  background-color: red;
+}
+
+.rotate-btn.active {
+  transform: rotate(360deg); 
+} */

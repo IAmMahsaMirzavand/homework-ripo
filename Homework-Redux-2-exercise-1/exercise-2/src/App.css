@@ -63,11 +63,159 @@ background-position: unset;
 } */
 
 
-.contact-background-image {
-  background-image: url("../material/hero-bg.jpg");
+
+/* .contact-background-image {
+  background-image: url("../public/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+} */
+
+
+
+
+
+/* .contact-background-image {
+  background-image: url("../public/hero-bg.jpg"); 
   background-size: cover; 
   background-position: center;
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
+ 
+  top: 0px; 
+  left:0px;
+  /* z-index: -1;  */
+
+
+
+
+
+
+/* .header {
   
+width: 100%;
+background-color: black;
+color: white;
+text-align: end;
+padding: 15px;
+
+} */
+
+/* 
+.header_end {
+
+  margin-right: 40px;
+} */
+
+table, th, td {
+  border: none;
+}
+
+* {
+
+  /* box-sizing: border-box; */
+}
+
+.rotate-btn {
+  padding: 10px 20px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform 0.4s ; 
+  
+  
+}
+
+.rotate-btn:hover {
+  transform: rotate(90deg); 
+  color: red;
+  border: none;
+}
+
+
+
+.bag-container {
+  position: relative; 
+}
+
+.bi-bag-plus-fill {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.bag-container:hover .bi-bag-plus-fill {
+  display: inline-block; 
+}
+
+
+
+.toast-message {
+  /* position: fixed; */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 128, 0, 0.9); 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 9999;
+  animation: fade-in-out 3s ease-in-out; 
+}
+
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.button{
+  display: flex;
+  margin: 350px auto;
+  padding: 15px 50px;
+  letter-spacing: 1px;
+  font-size: 17px;
+ }
+ 
+
+
+ .bag-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.add-to-cart-icon {
+  position: absolute;
+  top: 10px;  
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.bag-container:hover .add-to-cart-icon {
+  opacity: 1;  
 }

@@ -1,4 +1,4 @@
-import { CARDS } from "./actionType"
+import {CARTS, ADD_CARTS, REMOVE_CARTS } from "./actionType"
 const data = [
     {
       "type": "Plants",
@@ -62,18 +62,37 @@ const data = [
       "src": "https://websitedemos.net/plant-store-02/wp-content/uploads/sites/410/2019/01/cactus6-free-img.jpg"
     }
   ]
+
+
+
   
-export const cards = ()  =>{
+  export const carts = () => {
+
+return {
+
+  type : CARTS ,
+  payload :data,
+  
+
+}
+
+  }
+export const addCarts = (product)  =>{
 
     return {
-        type : CARDS ,
-        payload : {
-        type: "Plants",
-      name: "Rattle Snake Tail",
-      stars: 1,
-      price: "45.00 ",
-      src: "https://websitedemos.net/plant-store-02/wp-content/uploads/sites/410/2019/01/plant6-free-img.jpg",
-        },
-    
+        type : ADD_CARTS ,
+       payload : product,
     }
     }
+
+    export const removeCarts = () => {
+
+return {
+
+  type : REMOVE_CARTS ,
+ 
+
+}
+
+    }
+
