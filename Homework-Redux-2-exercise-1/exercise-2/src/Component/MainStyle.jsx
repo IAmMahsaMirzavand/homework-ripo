@@ -148,11 +148,16 @@ const MainStyle = () => {
         aria-label="Add to cart"
       ></i>
 
-                <Card.Body>
-                  <Card.Text>{plant.name}</Card.Text>
-                  <Card.Title>{plant.type}</Card.Title>
+                <Card.Body >
+                  <Card.Text>{plant.type}</Card.Text>
+                  <Card.Title>{plant.name}</Card.Title>
                   <Rating value={plant.stars} readOnly/>
-                  {/* <Button onClick={() => dispatch(addCarts(plant))}></Button> */}
+                  {plant.offPrice ? (<div className="price-container">
+    <span className="old-price">{plant.offPrice}</span>
+    <span className="discounted-price">{plant.price}</span> 
+</div>)
+: ( <span className="discounted-price">{plant.price}</span>)}
+                
                 </Card.Body>
                
               </Card>
