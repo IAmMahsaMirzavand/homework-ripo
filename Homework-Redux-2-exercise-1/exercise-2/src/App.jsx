@@ -7,7 +7,6 @@ import MainStyle from './Component/MainStyle'
 import Checkout from './Component/Checkout'
 import {BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 
-// import Home from './Component/Home'
 
    
 

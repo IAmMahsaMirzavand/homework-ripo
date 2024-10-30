@@ -11,7 +11,7 @@ export default function Ckeckout() {
   const cartItems = useSelector((state) => state.cartItems)
 
  
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
   return (
     <div>
       <div><Table/></div>
@@ -34,6 +34,11 @@ export default function Ckeckout() {
   {/* <h2><Total/></h2> */}
 </div>
     </div>
+
+
+
+
+
   )
 }
 

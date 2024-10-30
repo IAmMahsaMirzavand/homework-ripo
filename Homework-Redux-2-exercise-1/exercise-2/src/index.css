@@ -1,4 +1,4 @@
-/* :root {
+ /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,7 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} 
 
 a {
   font-weight: 500;
@@ -65,7 +65,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}  */
 
 
 
@@ -84,17 +84,16 @@ button:focus-visible {
 
 
 
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-  /* display: flex; */
-  /* justify-content: center; */
-}
+ 
+} */
 
 
-.container {
+/* .container {
   width: 80%;
   max-width: 1200px;
   padding: 20px;
@@ -163,12 +162,6 @@ body {
 
 
 
-.price-container {
-  /* display: flex; */
-  /* align-items: center; */
-  /* gap: 8px; */
-
-}
 
 .old-price {
   font-size: 14px;
@@ -180,4 +173,158 @@ body {
   font-size: 16px;
   color: #ff5722;
   font-weight: bold;
+} */
+
+.price-container {
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 8px; */
+
+}
+
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+* {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 650px;
+  background-image: url(./material/hero-bg.jpg) !important;
+
+  background-position: left !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+header nav {
+  background: #e7e7e5 !important;
+}
+.logo {
+  border-radius: 50%;
+  width: 70px;
+}
+.shop-btn {
+  background-color: #fc5f5f !important;
+  transition: all 0.5s ease;
+  border: none;
+  width: 15vw;
+  height: 55px;
+  border-radius: 30px;
+}
+
+.shop-btn:hover {
+  background-color: #61ce70 !important;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    height: 520px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    height: 450px;
+  }
+}
+
+.cart-container {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  /* Default to 1 column */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.cart-card {
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile (small screens): 3 columns */
+@media (min-width: 480px) {
+  .cart-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet (medium screens): 2 columns */
+@media (min-width: 768px) {
+  .cart-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop (large screens): 3 columns */
+@media (min-width: 1024px) {
+  .cart-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop (extra-large screens): 4 columns */
+@media (min-width: 1440px) {
+  .cart-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.plant-card:hover .add-to-card {
+  visibility: visible !important;
+}
+
+.add-to-card:hover {
+  background-color: #0000 !important;
+}
+
+.add-to-card > * {
+  color: gray;
+  transition: all 0.1s ease;
+}
+
+.add-to-card:hover > * {
+  color: #1b1b1bcf;
+}
+
+.add-card button.MuiButtonBase-root {
+  background-color: #0000 !important;
+  box-shadow: none;
+  width: 236px !important;
+  height: 345px !important;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.delete-icon > * {
+  transform-origin: center;
+  transition: all 0.2s ease;
+}
+
+.delete-icon:hover > * {
+  transform: rotate(90deg) scale(1.5);
+  color: #dc143c;
+}
+
+.nav-list-link {
+  transition: all 0.1s ease;
+}
+
+.nav-list-link:hover {
+  color: #fc5f5f !important;
+}
+
+.header > section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
