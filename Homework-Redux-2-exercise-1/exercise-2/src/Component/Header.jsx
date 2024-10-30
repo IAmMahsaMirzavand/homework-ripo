@@ -32,7 +32,9 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div className="header-content position-absolute bottom-0 start-0 mb-4 ms-4">
+
+      {/* <div className="header-content position-absolute bottom-0 start-0 mb-4 ms-4"> */}
+      <div className='header-content' >
         <h3 className="text-black">Best Quality Plants</h3>
         <h1 className="text-black">
           Amazing Variety<br />
